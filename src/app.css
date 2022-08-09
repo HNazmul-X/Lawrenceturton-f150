@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .layout.left {
+        height: calc(100vh - 26px);
+    }
+    .layout.right {
+        height: calc(100vh - 26px);
+    }
+    .layout.title {
+        height: 26px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar {
+        width: 10px;
+        height:10px;
+    }
+
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+        width: 10px;
+        background: theme(colors.scrollbar);
+        border: 2px transparent solid;
+        border-radius: 20px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
