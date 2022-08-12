@@ -4,10 +4,10 @@
 
 @layer components {
     .layout.left {
-        height: calc(100vh - 26px);
+        height: calc(100vh - 2px);
     }
     .layout.right {
-        height: calc(100vh - 26px);
+        height: calc(100vh - 5px);
     }
     .layout.title {
         height: 26px;
@@ -15,7 +15,7 @@
 
     .scrollbar-thin::-webkit-scrollbar {
         width: 10px;
-        height:10px;
+        height: 10px;
     }
 
     .scrollbar-thin::-webkit-scrollbar-thumb {
@@ -26,5 +26,52 @@
     }
     .scrollbar-thin::-webkit-scrollbar-track {
         background: transparent;
+    }
+}
+
+@layer utilities {
+    .c-slider {
+        -webkit-appearance: none;
+    }
+    .c-slider::-webkit-slider-thumb {
+        width: 10px;
+        -webkit-appearance: none;
+        height: 10px;
+        background: #c1c1c1;
+        border-radius: 50%;
+    }
+
+    .c-checkbox {
+        width: 16px;
+        height: 16px;
+        position: relative;
+    }
+    .c-checkbox input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .c-checkbox input[type="checkbox"] ~ .checkbox-span {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: black;
+    }
+    .c-checkbox input[type="checkbox"]:checked + .checkbox-span {
+        background-color: #919191;
+    }
+    .c-checkbox input[type="checkbox"]:checked + .checkbox-span::before {
+        position: absolute;
+        content: "";
+        left: 5px;
+        bottom: 4px;
+        width: 7px;
+        height: 12px;
+        border: solid black;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
     }
 }

@@ -1,5 +1,5 @@
 <script>
-    import RightSideUpper from "./../Components/RightSideUpper.svelte";
+    import RightSideUpper from "./RightSideUpper.svelte";
     import LayoutLeftSideBottom from "./LayoutLeftSideBottom.svelte";
     import LayoutRightSidebarBottom from "./LayoutRightSidebarBottom.svelte";
 </script>

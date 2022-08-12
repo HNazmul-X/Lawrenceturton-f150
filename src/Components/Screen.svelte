@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <div class="w-[250px] xxl:w-[350px] absolute h-full top-0 right-0 bg-neutral-900 bg-opacity-70 filter backdrop-blur-md backdrop-opacity-80">
+    <div class="w-[250px] xxl:w-[350px] absolute h-full top-0 right-0 bg-neutral-900 bg-opacity-70 filter backdrop-blur-[36px] ">
         <div class="w-full h-full flex flex-col">
             <div class="p-3">
                 <div class="flex bg-theme-900 p-1 rounded items-center gap-1 focus:ring-1 ring-white" tabindex="0">

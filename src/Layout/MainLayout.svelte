@@ -7,9 +7,9 @@
 
 <main class="w-full h-screen  border-black flex flex-wrap">
     <!-- title bar -->
-    <div class="w-full  layout title">
+    <!-- <div class="w-full  layout title">
         <Titlebar />
-    </div>
+    </div> -->
 
     <!-- Left Side -->
     <div class="w-[80%]  layout left">
